@@ -6,7 +6,7 @@ require("./db/conn")
 
 
 const app=express();
-const PORT=6010
+const PORT=process.env.PORT||6010
 app.use(cors())  //middleware 
 app.use(express.json())
 app.use(router)
